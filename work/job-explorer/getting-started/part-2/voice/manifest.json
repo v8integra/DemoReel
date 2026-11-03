@@ -1,0 +1,111 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Next, choose your AI.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\5e1ec8ecfd2dc7ad.wav",
+     "seconds": 1.36775
+    },
+    {
+     "text": "Job Explorer uses it to read each job posting, and score how well it fits you.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\caae49107b3c5a6a.wav",
+     "seconds": 4.752
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Local AI runs right on your computer, with a free program called Ollama.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\b4fe7909f68b4bcb.wav",
+     "seconds": 4.429291666666667
+    },
+    {
+     "text": "It's the most private option, and it costs nothing to use.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\aae20ea75ac65e95.wav",
+     "seconds": 3.169375
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Cloud AI uses Claude, ChatGPT, or Gemini, with your own API key.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\aef850e57ebd1817.wav",
+     "seconds": 5.461458333333334
+    },
+    {
+     "text": "It's fast and capable, and the provider bills you for what you use.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\b4dd7593b407fdfd.wav",
+     "seconds": 3.6502083333333335
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "We'll use local AI.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\526fb8b611e6d740.wav",
+     "seconds": 1.244875
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Job Explorer checks your computer first.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\a5366756c37c4fef.wav",
+     "seconds": 2.282125
+    },
+    {
+     "text": "Here it found a graphics card with eight gigabytes of memory, and recommends a model that suits it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\4d1a65ee55c15a61.wav",
+     "seconds": 5.176333333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "If you don't have Ollama yet, install it from the Ollama website, then start it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\32f4907f16e08405.wav",
+     "seconds": 4.339541666666666
+    },
+    {
+     "text": "On this computer, it's already installed and running.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\88704e40e8341e95.wav",
+     "seconds": 2.7552916666666665
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Then pick a model to download.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\c12b7353c2f66764.wav",
+     "seconds": 1.6199166666666667
+    },
+    {
+     "text": "The recommended one is marked for you.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\8dea6a9e36e71cab.wav",
+     "seconds": 2.054333333333333
+    },
+    {
+     "text": "Bigger models give better results, but need a bigger graphics card.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\bf9a0fe8b0d4a847.wav",
+     "seconds": 3.5955833333333334
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Click use, and Job Explorer runs a quick test to make sure the model works on your computer.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-2\\voice\\3703e6243a8af749.wav",
+     "seconds": 5.117541666666667
+    }
+   ]
+  }
+ ]
+}

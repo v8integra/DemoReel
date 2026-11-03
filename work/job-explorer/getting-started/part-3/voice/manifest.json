@@ -1,0 +1,78 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Now add your resume.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\25eb7e3d5d10d07c.wav",
+     "seconds": 1.1473333333333333
+    },
+    {
+     "text": "Job Explorer reads Word and PDF files.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\b82f25e589ea26bb.wav",
+     "seconds": 2.806791666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Click import resume, and choose your file.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\1d3499650a40dbff.wav",
+     "seconds": 2.2636666666666665
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "It reads the resume, and turns it into suggestions for your profile, like your summary, work history, education, and skills.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\64788b2f55670827.wav",
+     "seconds": 7.445083333333334
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Nothing is used until you approve it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\aac974058b1a0dc4.wav",
+     "seconds": 2.03875
+    },
+    {
+     "text": "We'll do that in a moment.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\ac803ccde3306605.wav",
+     "seconds": 1.3075833333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "That's setup done.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\d2f5e47f76775ca4.wav",
+     "seconds": 0.9990416666666667
+    },
+    {
+     "text": "Click finish.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\dfe4ea3dca7eb119.wav",
+     "seconds": 0.7614583333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Job Explorer then opens its built-in guide.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\32c29372f66fad57.wav",
+     "seconds": 2.509333333333333
+    },
+    {
+     "text": "It covers every feature, and you can come back to it any time from the sidebar.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-3\\voice\\a3333ed066218bae.wav",
+     "seconds": 4.148333333333333
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+1
+00:00:02,901 --> 00:00:04,024
+Open your Profile.
+
+2
+00:00:04,210 --> 00:00:07,507
+Everything taken from the resume is waiting for your review.
+
+3
+00:00:08,373 --> 00:00:12,542
+Your contact details are only used on resumes and letters you create.
+
+4
+00:00:12,725 --> 00:00:14,723
+They're never sent to an AI provider.
+
+5
+00:00:15,585 --> 00:00:18,508
+Check each item, and fix anything that's wrong with edit.
+
+6
+00:00:18,688 --> 00:00:19,639
+Then approve it.
+
+7
+00:00:19,820 --> 00:00:24,134
+Only approved information is used to score jobs and build resumes.
+
+8
+00:00:24,999 --> 00:00:27,739
+Everything here looks right, so we'll approve each item.
+
+9
+00:00:27,919 --> 00:00:33,813
+As you approve them, they move from needs review to approved, until the whole profile is ready to use.
+
+10
+00:00:34,672 --> 00:00:38,190
+Imported resumes start as drafts, so approve the resume too.
+
+11
+00:00:38,369 --> 00:00:40,736
+Open Resumes, and click approve resume.

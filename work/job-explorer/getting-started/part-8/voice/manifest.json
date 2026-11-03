@@ -1,0 +1,102 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Here are your first results.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\1ceb08c980676fc6.wav",
+     "seconds": 1.3704166666666666
+    },
+    {
+     "text": "Each job gets a score from zero to a hundred, and the best fits are marked as strong matches.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\1a926ace1b2958b0.wav",
+     "seconds": 5.398958333333334
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Each one has a short reason, and a heads up when something needs a closer look.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\f927ef83db529644.wav",
+     "seconds": 3.907208333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Click details to see exactly why it fits, and where the gaps are.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\9c461aa8e40d3278.wav",
+     "seconds": 3.5937083333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Open posting takes you to the job on the employer's site.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\667228e833ad9730.wav",
+     "seconds": 3.2915
+    },
+    {
+     "text": "That's where you apply.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\87523ca3c4d56356.wav",
+     "seconds": 1.0732083333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Then come back and mark it applied, and it moves to your Tracker.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\1a64bb4c20cfb3b2.wav",
+     "seconds": 3.2905416666666665
+    },
+    {
+     "text": "Or decline it, or save it for later.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\f981d0426fc831fa.wav",
+     "seconds": 2.1322916666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Jobs with low scores are hidden.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\2374bf01fe4d7beb.wav",
+     "seconds": 1.769125
+    },
+    {
+     "text": "Tick show low scores to see everything the search found.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\f45158d970befcf3.wav",
+     "seconds": 2.703666666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "That's it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\acd4ab7032fb9439.wav",
+     "seconds": 0.6921666666666667
+    },
+    {
+     "text": "You've gone from setup to your first list of jobs.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\60547f78e57f6d12.wav",
+     "seconds": 2.5545416666666667
+    },
+    {
+     "text": "Next, try Searcher Mode, to run your searches automatically.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\40b56b15afb258f2.wav",
+     "seconds": 3.4596666666666667
+    },
+    {
+     "text": "Thanks for watching.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-8\\voice\\20da15fede9ce4bf.wav",
+     "seconds": 1.1115
+    }
+   ]
+  }
+ ]
+}

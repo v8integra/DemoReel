@@ -1,0 +1,37 @@
+chapter: Choose where to look
+
+scenes:
+  - say: Now choose where Job Explorer looks for jobs. Open Job Sources.
+    steps:
+      - nav: Job Sources
+
+  - say: The main source is companies you watch. Paste a company's careers page from Greenhouse, Lever, Ashby, or SmartRecruiters, then click add company.
+    steps:
+      - zoom: { on: 'main section >> nth=0', scale: 1.3 }
+      - type: { into: 'main input[placeholder^="https://"]', text: 'https://boards.greenhouse.io/reddit', delay: 30 }
+      - click: 'main button:has-text("Add company")'
+      - waitFor: 'main >> text=Company added'
+
+  - say: We'll add a couple more. Every time a search runs, it checks every company on your list, and keeps only the jobs that pass your filters. You can watch as many companies as you like.
+    steps:
+      - type: { into: 'main input[placeholder^="https://"]', text: 'https://boards.greenhouse.io/coinbase', delay: 15 }
+      - click: 'main button:has-text("Add company")'
+      - wait: 1
+      - type: { into: 'main input[placeholder^="https://"]', text: 'https://jobs.ashbyhq.com/vanta', delay: 15 }
+      - click: 'main button:has-text("Add company")'
+      - wait: 1
+      - unzoom
+
+  - say: If you use a cloud AI key, find companies can search the web for employers that hire for your job title.
+    steps:
+      - ring: 'main button:has-text("Find companies")'
+      - wait: 1.2
+      - ring: off
+
+  - say: Below, you can add USAJOBS for federal jobs in the United States, with a free key. And you can block companies you never want to see, like your current employer.
+    steps:
+      - scroll: { by: 600, over: main }
+      - hover: 'main >> text=USAJOBS (U.S. federal jobs)'
+      - wait: 0.8
+      - scroll: { by: 400, over: main }
+      - hover: 'main >> text=Blocked companies'

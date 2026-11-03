@@ -1,0 +1,39 @@
+1
+00:00:02,920 --> 00:00:05,500
+Now choose where Job Explorer looks for jobs.
+
+2
+00:00:05,688 --> 00:00:07,056
+Open Job Sources.
+
+3
+00:00:07,914 --> 00:00:10,092
+The main source is companies you watch.
+
+4
+00:00:10,280 --> 00:00:16,732
+Paste a company's careers page from Greenhouse, Lever, Ashby, or SmartRecruiters, then click add company.
+
+5
+00:00:17,587 --> 00:00:18,783
+We'll add a couple more.
+
+6
+00:00:18,962 --> 00:00:25,531
+Every time a search runs, it checks every company on your list, and keeps only the jobs that pass your filters.
+
+7
+00:00:25,711 --> 00:00:28,017
+You can watch as many companies as you like.
+
+8
+00:00:28,871 --> 00:00:35,188
+If you use a cloud AI key, find companies can search the web for employers that hire for your job title.
+
+9
+00:00:36,056 --> 00:00:41,418
+Below, you can add USAJOBS for federal jobs in the United States, with a free key.
+
+10
+00:00:41,605 --> 00:00:45,508
+And you can block companies you never want to see, like your current employer.

@@ -1,0 +1,24 @@
+{
+  "name": "demoreel",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Scripted product demo videos: drive an app, record it, narrate it with local TTS.",
+  "type": "module",
+  "scripts": {
+    "voice": "node src/cli.mjs voice",
+    "record": "node src/cli.mjs record",
+    "make": "node src/cli.mjs make"
+  },
+  "dependencies": {
+    "ffmpeg-static": "5.3.0",
+    "kokoro-js": "1.2.1",
+    "playwright-core": "1.63.0",
+    "yaml": "2.8.1"
+  },
+  "allowScripts": {
+    "ffmpeg-static@5.3.0": true,
+    "onnxruntime-node@1.21.0": true,
+    "protobufjs@7.6.6": true,
+    "sharp@0.34.5": true
+  }
+}

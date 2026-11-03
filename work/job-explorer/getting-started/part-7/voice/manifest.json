@@ -1,0 +1,78 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Back on Searches, open the search you just made.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\02607caebc4440a2.wav",
+     "seconds": 2.611125
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Preview shows what your filters keep, without using any AI.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\da57fc76f01a7cdd.wav",
+     "seconds": 3.39525
+    },
+    {
+     "text": "It's a quick way to check your settings.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\7ab5ad1c1c901df3.wav",
+     "seconds": 1.7105
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "It shows how many postings it found, how many passed your filters, and why the rest were left out.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\c00a886cb7ea9997.wav",
+     "seconds": 5.401
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "When it looks right, click run search now.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\a7a3002d1dba2e46.wav",
+     "seconds": 2.1012916666666666
+    },
+    {
+     "text": "The AI reads each job that passed, and scores it against your profile.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\09eb3b46cf862000.wav",
+     "seconds": 4.0140416666666665
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "With local AI, this takes a few minutes, depending on your computer.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\fb036bc53eeb55ee.wav",
+     "seconds": 3.824625
+    },
+    {
+     "text": "You can keep using the app while it runs.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\2048bfcf48121aa5.wav",
+     "seconds": 1.9950833333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Done.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\69973ccc5187654f.wav",
+     "seconds": 0.5
+    },
+    {
+     "text": "The new jobs are waiting in your Review List.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-7\\voice\\58b92ced1d294c5f.wav",
+     "seconds": 2.1634166666666665
+    }
+   ]
+  }
+ ]
+}

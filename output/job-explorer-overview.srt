@@ -1,0 +1,55 @@
+1
+00:00:00,355 --> 00:00:02,439
+Job hunting is a full-time job.
+
+2
+00:00:02,634 --> 00:00:05,147
+Job Explorer takes the sorting off your plate.
+
+3
+00:00:06,301 --> 00:00:11,998
+It searches the job boards you choose, and AI scores every posting against your own experience.
+
+4
+00:00:12,860 --> 00:00:14,740
+Strong matches rise to the top.
+
+5
+00:00:14,927 --> 00:00:18,568
+Weak ones sink, so you spend your time on jobs worth applying for.
+
+6
+00:00:20,206 --> 00:00:23,989
+Open any job to see exactly why it fits, and where the gaps are.
+
+7
+00:00:25,987 --> 00:00:26,824
+Found the one?
+
+8
+00:00:27,004 --> 00:00:29,723
+Apply on the employer's site, then mark it applied.
+
+9
+00:00:31,686 --> 00:00:35,841
+The tracker keeps every application and where it stands, all in one place.
+
+10
+00:00:37,082 --> 00:00:40,527
+And stats show what's working, from response rates to interviews.
+
+11
+00:00:42,258 --> 00:00:44,609
+Your data stays encrypted on your computer.
+
+12
+00:00:44,800 --> 00:00:47,403
+Use local AI, and nothing leaves it at all.
+
+13
+00:00:48,270 --> 00:00:49,298
+Job Explorer.
+
+14
+00:00:49,492 --> 00:00:51,337
+Get it today on the Microsoft Store.

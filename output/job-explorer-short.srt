@@ -1,0 +1,31 @@
+1
+00:00:00,351 --> 00:00:01,897
+Stop scrolling job boards.
+
+2
+00:00:02,083 --> 00:00:04,000
+Let AI find the jobs that fit you.
+
+3
+00:00:04,851 --> 00:00:10,146
+Job Explorer scores every posting against your own experience, so the best matches come first.
+
+4
+00:00:11,004 --> 00:00:16,367
+Tap any job to see exactly why it's a match, and what's missing, before you spend time applying.
+
+5
+00:00:18,913 --> 00:00:20,360
+Applied on the employer's site?
+
+6
+00:00:20,542 --> 00:00:23,418
+One click, and it's in your tracker, so nothing slips through.
+
+7
+00:00:25,358 --> 00:00:26,370
+Job Explorer.
+
+8
+00:00:26,551 --> 00:00:28,154
+Get it on the Microsoft Store.

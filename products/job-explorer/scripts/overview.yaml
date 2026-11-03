@@ -1,0 +1,87 @@
+﻿# Job Explorer overview: about 60 seconds, 16:9, for YouTube.
+title: Job Explorer in 60 seconds
+voice: af_heart        # Kokoro voices: af_heart, af_bella, am_michael, am_fenrir, bf_emma, bm_george ...
+speed: 1.0
+size: [1280, 720]      # app window in CSS pixels
+scale: 1.5             # rendered at 1.5x = 1920x1080
+captions: true         # burned-in captions (an .srt is written either way)
+thumbnailAt: 1.6
+
+youtube:
+  title: Job Explorer – AI job search that stays on your PC
+  description: |
+    Job Explorer searches the job boards you choose, scores every posting against your own experience with AI, and tracks every application in one place.
+    Your data stays encrypted on your computer. Use local AI and nothing leaves it at all.
+
+    Get Job Explorer on the Microsoft Store.
+  tags: [job search, AI, job tracker, resume, Windows app, local AI]
+
+# Runs before recording starts (not filmed).
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Find jobs that fit you. Track every application.
+    say: Job hunting is a full-time job. Job Explorer takes the sorting off your plate.
+    hold: 0.3
+
+  - card: null
+    say: It searches the job boards you choose, and AI scores every posting against your own experience.
+    steps:
+      - wait: 0.6
+      - nav: Review List
+      - ring: article.review-card >> nth=0
+      - wait: 1.6
+      - ring: off
+
+  - say: Strong matches rise to the top. Weak ones sink, so you spend your time on jobs worth applying for.
+    steps:
+      - scroll: { by: 1500, over: article.review-card >> nth=1 }
+      - hover: article.review-card >> nth=3
+      - wait: 1.2
+      - scroll: -1500
+
+  - say: Open any job to see exactly why it fits, and where the gaps are.
+    steps:
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Details")'
+      - scroll: { by: 280, over: 'article.review-card:has-text("Brightwater")' }
+      - zoom: { on: 'article.review-card:has-text("Brightwater") >> ul >> nth=0', scale: 1.4 }
+      - wait: 1.2
+
+  - say: Found the one? Apply on the employer's site, then mark it applied.
+    steps:
+      - unzoom
+      - click: 'article.review-card:has-text("Brightwater") >> button:text-is("Applied")'
+      - wait: 0.8
+      - click: 'button:has-text("Add to Tracker")'
+
+  - say: The tracker keeps every application and where it stands, all in one place.
+    steps:
+      - nav: Tracker
+      - wait: 0.8
+      - select: { in: 'tr:has-text("Harborline") select', value: interviewing }
+      - wait: 0.6
+
+  - say: And stats show what's working, from response rates to interviews.
+    steps:
+      - nav: Stats
+      - hover: text=response rate
+      - wait: 0.8
+      - hover: text=Applications over time
+
+  - say: Your data stays encrypted on your computer. Use local AI, and nothing leaves it at all.
+    steps:
+      - nav: AI Providers
+      - wait: 1
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: AI job search that stays on your PC.
+      cta: Get it on the Microsoft Store
+    say: Job Explorer. Get it today on the Microsoft Store.
+    hold: 1.5

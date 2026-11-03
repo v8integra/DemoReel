@@ -1,0 +1,79 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Open your Profile.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\3efd799e6f668cfa.wav",
+     "seconds": 1.12275
+    },
+    {
+     "text": "Everything taken from the resume is waiting for your review.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\b0e5bcdd6d860193.wav",
+     "seconds": 3.2948333333333335
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Your contact details are only used on resumes and letters you create.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\453a20857d55458b.wav",
+     "seconds": 4.161291666666667
+    },
+    {
+     "text": "They're never sent to an AI provider.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\7cba9019fba68804.wav",
+     "seconds": 1.9852083333333332
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Check each item, and fix anything that's wrong with edit.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\acbf051bb78805c6.wav",
+     "seconds": 2.9115416666666665
+    },
+    {
+     "text": "Then approve it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\5dd06413a9d8757c.wav",
+     "seconds": 0.9425416666666667
+    },
+    {
+     "text": "Only approved information is used to score jobs and build resumes.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\30fe3c995ca7a027.wav",
+     "seconds": 4.306958333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Everything here looks right, so we'll approve each item.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\b5b3efc7f8a5c9e3.wav",
+     "seconds": 2.7380833333333334
+    },
+    {
+     "text": "As you approve them, they move from needs review to approved, until the whole profile is ready to use.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\f4b17b91037abff7.wav",
+     "seconds": 5.886666666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Imported resumes start as drafts, so approve the resume too.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\e52925b90150cc0b.wav",
+     "seconds": 3.5135833333333335
+    },
+    {
+     "text": "Open Resumes, and click approve resume.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-4\\voice\\cc47f70aff1a5ee2.wav",
+     "seconds": 2.3605416666666668
+    }
+   ]
+  }
+ ]
+}

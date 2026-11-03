@@ -1,0 +1,59 @@
+1
+00:00:02,920 --> 00:00:04,294
+Next, choose your AI.
+
+2
+00:00:04,486 --> 00:00:09,249
+Job Explorer uses it to read each job posting, and score how well it fits you.
+
+3
+00:00:10,105 --> 00:00:14,547
+Local AI runs right on your computer, with a free program called Ollama.
+
+4
+00:00:14,733 --> 00:00:17,919
+It's the most private option, and it costs nothing to use.
+
+5
+00:00:18,783 --> 00:00:24,251
+Cloud AI uses Claude, ChatGPT, or Gemini, with your own API key.
+
+6
+00:00:24,434 --> 00:00:28,091
+It's fast and capable, and the provider bills you for what you use.
+
+7
+00:00:28,959 --> 00:00:30,204
+We'll use local AI.
+
+8
+00:00:31,072 --> 00:00:33,358
+Job Explorer checks your computer first.
+
+9
+00:00:33,547 --> 00:00:38,734
+Here it found a graphics card with eight gigabytes of memory, and recommends a model that suits it.
+
+10
+00:00:39,599 --> 00:00:43,952
+If you don't have Ollama yet, install it from the Ollama website, then start it.
+
+11
+00:00:44,140 --> 00:00:46,897
+On this computer, it's already installed and running.
+
+12
+00:00:47,760 --> 00:00:49,392
+Then pick a model to download.
+
+13
+00:00:49,574 --> 00:00:51,645
+The recommended one is marked for you.
+
+14
+00:00:51,830 --> 00:00:55,428
+Bigger models give better results, but need a bigger graphics card.
+
+15
+00:00:56,290 --> 00:01:01,411
+Click use, and Job Explorer runs a quick test to make sure the model works on your computer.

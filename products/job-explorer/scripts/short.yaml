@@ -1,0 +1,71 @@
+﻿# Job Explorer YouTube Short: about 30 seconds, 9:16.
+title: Job Explorer Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]      # portrait window in CSS pixels
+scale: 1.5             # 1080x1920
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+# Shorts' own buttons and title cover the bottom and right edge: keep captions above them.
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+# No sidebar, and only the Tracker columns that matter, so the app fills the narrow screen.
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  table th:nth-child(n+4):not(:nth-child(9)), table td:nth-child(n+4):not(:nth-child(9)) { display: none !important; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: AI that finds jobs that actually fit you #shorts
+  description: |
+    Job Explorer scores every job posting against your own experience and tracks every application. Your data stays encrypted on your PC.
+    Get Job Explorer on the Microsoft Store.
+  tags: [job search, AI, job tracker, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Stop scrolling job boards.
+    say: Stop scrolling job boards. Let AI find the jobs that fit you.
+
+  - card: null
+    say: Job Explorer scores every posting against your own experience, so the best matches come first.
+    steps:
+      - wait: 0.3
+      - zoom: { on: article.review-card >> nth=0, scale: 1.45 }
+      - wait: 1.8
+      - unzoom
+
+  - say: Tap any job to see exactly why it's a match, and what's missing, before you spend time applying.
+    steps:
+      - scroll: { by: 1000, over: article.review-card >> nth=1 }
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Details")'
+      - scroll: { by: 380, over: 'article.review-card:has-text("Brightwater")' }
+      - zoom: { on: 'article.review-card:has-text("Brightwater") >> ul >> nth=0', scale: 1.5 }
+      - wait: 1
+
+  - say: Applied on the employer's site? One click, and it's in your tracker, so nothing slips through.
+    steps:
+      - unzoom
+      - click: 'article.review-card:has-text("Brightwater") >> button:text-is("Applied")'
+      - click: 'button:has-text("Add to Tracker")'
+      - nav: Tracker
+      - zoom: { on: 'tr:has-text("Brightwater")', scale: 1.4 }
+      - wait: 0.6
+
+  - steps:
+      - unzoom
+    card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: AI job search that stays on your PC.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2

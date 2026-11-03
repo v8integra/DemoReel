@@ -1,0 +1,35 @@
+chapter: Approve your profile
+
+scenes:
+  - say: Open your Profile. Everything taken from the resume is waiting for your review.
+    steps:
+      - nav: Profile
+      - ring: 'main >> text=items need review'
+      - wait: 1.2
+      - ring: off
+
+  - say: Your contact details are only used on resumes and letters you create. They're never sent to an AI provider.
+    steps:
+      - zoom: { on: 'main section >> nth=0', scale: 1.3 }
+      - wait: 1.5
+      - unzoom
+
+  - say: Check each item, and fix anything that's wrong with edit. Then approve it. Only approved information is used to score jobs and build resumes.
+    steps:
+      - scroll: { by: 700, over: 'main' }
+      - hover: 'main button:text-is("Edit") >> nth=1'
+      - wait: 0.8
+      - scroll: -700
+
+  - say: Everything here looks right, so we'll approve each item. As you approve them, they move from needs review to approved, until the whole profile is ready to use.
+    steps:
+      - clickAll: { sel: 'main button:text-is("Approve")', gap: 0.6 }
+      - ring: 'main >> text=Everything is approved'
+      - wait: 1
+      - ring: off
+
+  - say: Imported resumes start as drafts, so approve the resume too. Open Resumes, and click approve resume.
+    steps:
+      - nav: Resumes
+      - click: 'main button:has-text("Approve resume")'
+      - wait: 0.8

@@ -1,0 +1,34 @@
+# Job Explorer tutorial: from a brand-new install to the first list of AI-scored jobs.
+# Real job boards (Reddit, Coinbase, Vanta) and the real local AI, so the jobs shown are real postings.
+# make: node src/cli.mjs make job-explorer getting-started   (--from=N / --only=N to redo parts)
+title: Job Explorer getting started
+start: fresh              # part 1 begins with no data at all: the first-run setup
+chapterImage: ../assets/icon.png
+
+defaults:
+  voice: af_heart
+  speed: 1.0
+  size: [1280, 720]
+  scale: 1.5
+  captions: true
+  openFiles: [../assets/Jordan Avery Resume.docx]
+  pronounce: { USAJOBS: U.S.A. Jobs }
+
+parts:
+  - tutorial-1-welcome
+  - tutorial-2-ai
+  - tutorial-3-resume
+  - tutorial-4-profile
+  - tutorial-5-search
+  - tutorial-6-sources
+  - tutorial-7-run
+  - tutorial-8-results
+
+youtube:
+  title: How to use Job Explorer – from setup to your first AI-scored jobs
+  description: |
+    A complete walkthrough of Job Explorer: setting up local AI, importing your resume, approving your profile, creating a search, choosing job sources, and reviewing your first AI-scored jobs.
+    The jobs in this video are real postings from the companies' public job boards on the day it was recorded. The person and resume are made up.
+
+    Get Job Explorer on the Microsoft Store.
+  tags: [Job Explorer, job search, AI job search, tutorial, how to, local AI, Ollama, resume, job tracker]

@@ -1,0 +1,36 @@
+chapter: Welcome and privacy
+introCard: false          # this part opens with the video's own title card instead
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Getting started with Job Explorer
+      subtitle: From setup to your first AI-scored jobs
+    say: In this video, we'll set up Job Explorer from scratch, and go all the way to your first list of AI-scored jobs.
+    hold: 0.4
+
+  - card: null
+    say: The first time you open Job Explorer, a short setup walks you through it. It starts by explaining how your information is handled.
+    steps:
+      - wait: 0.8
+      - zoom: { on: '[role=dialog] ul', scale: 1.35 }
+
+  - say: Your profile, resumes, and applications stay on your computer, encrypted. There's no account, and nothing is sent to the app's maker.
+    steps:
+      - ring: '[role=dialog] li >> nth=0'
+
+  - say: When the AI scores a job, only what it needs is sent, like the posting and your skills. Your name and contact details are removed first. With local AI, nothing leaves your computer at all.
+    steps:
+      - ring: '[role=dialog] li >> nth=1'
+
+  - say: And Job Explorer never applies for you. You apply on the employer's own site, then mark the job as applied.
+    steps:
+      - ring: '[role=dialog] li >> nth=2'
+
+  - say: You can also choose the app's language here. Let's get started.
+    steps:
+      - ring: off
+      - unzoom
+      - hover: '#wiz-language'
+      - wait: 0.6
+      - click: '[role=dialog] button:has-text("Get started")'

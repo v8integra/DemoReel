@@ -1,0 +1,74 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Now choose where Job Explorer looks for jobs.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\bcc116c6acf1702c.wav",
+     "seconds": 2.56375
+    },
+    {
+     "text": "Open Job Sources.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\5a8cc2f12eadc937.wav",
+     "seconds": 1.3529583333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "The main source is companies you watch.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\93d25ad7993fb6f8.wav",
+     "seconds": 2.169208333333333
+    },
+    {
+     "text": "Paste a company's careers page from Greenhouse, Lever, Ashby, or SmartRecruiters, then click add company.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\eb479936e2732e69.wav",
+     "seconds": 6.446166666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "We'll add a couple more.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\8a280c71f272dbb5.wav",
+     "seconds": 1.1882083333333333
+    },
+    {
+     "text": "Every time a search runs, it checks every company on your list, and keeps only the jobs that pass your filters.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\490ae5b6ba684c85.wav",
+     "seconds": 6.5612916666666665
+    },
+    {
+     "text": "You can watch as many companies as you like.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\673e17f4317c0401.wav",
+     "seconds": 2.291625
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "If you use a cloud AI key, find companies can search the web for employers that hire for your job title.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\226add587fbd2535.wav",
+     "seconds": 6.312541666666666
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Below, you can add USAJOBS for federal jobs in the United States, with a free key.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\8d4569dd57e1ccba.wav",
+     "seconds": 5.357875
+    },
+    {
+     "text": "And you can block companies you never want to see, like your current employer.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\getting-started\\part-6\\voice\\badc6cbbb9b8f15f.wav",
+     "seconds": 3.899208333333333
+    }
+   ]
+  }
+ ]
+}

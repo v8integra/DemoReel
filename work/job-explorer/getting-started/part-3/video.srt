@@ -1,0 +1,39 @@
+1
+00:00:02,908 --> 00:00:04,062
+Now add your resume.
+
+2
+00:00:04,250 --> 00:00:07,068
+Job Explorer reads Word and PDF files.
+
+3
+00:00:07,925 --> 00:00:10,201
+Click import resume, and choose your file.
+
+4
+00:00:11,061 --> 00:00:18,519
+It reads the resume, and turns it into suggestions for your profile, like your summary, work history, education, and skills.
+
+5
+00:00:19,384 --> 00:00:21,431
+Nothing is used until you approve it.
+
+6
+00:00:21,619 --> 00:00:22,937
+We'll do that in a moment.
+
+7
+00:00:23,805 --> 00:00:24,804
+That's setup done.
+
+8
+00:00:24,989 --> 00:00:25,769
+Click finish.
+
+9
+00:00:26,626 --> 00:00:29,136
+Job Explorer then opens its built-in guide.
+
+10
+00:00:29,323 --> 00:00:33,477
+It covers every feature, and you can come back to it any time from the sidebar.

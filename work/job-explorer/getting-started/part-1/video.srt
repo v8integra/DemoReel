@@ -1,0 +1,47 @@
+1
+00:00:00,354 --> 00:00:07,081
+In this video, we'll set up Job Explorer from scratch, and go all the way to your first list of AI-scored jobs.
+
+2
+00:00:08,348 --> 00:00:12,377
+The first time you open Job Explorer, a short setup walks you through it.
+
+3
+00:00:12,560 --> 00:00:15,558
+It starts by explaining how your information is handled.
+
+4
+00:00:16,423 --> 00:00:20,703
+Your profile, resumes, and applications stay on your computer, encrypted.
+
+5
+00:00:20,886 --> 00:00:23,875
+There's no account, and nothing is sent to the app's maker.
+
+6
+00:00:24,734 --> 00:00:29,798
+When the AI scores a job, only what it needs is sent, like the posting and your skills.
+
+7
+00:00:29,977 --> 00:00:33,001
+Your name and contact details are removed first.
+
+8
+00:00:33,188 --> 00:00:36,156
+With local AI, nothing leaves your computer at all.
+
+9
+00:00:37,017 --> 00:00:39,262
+And Job Explorer never applies for you.
+
+10
+00:00:39,443 --> 00:00:43,408
+You apply on the employer's own site, then mark the job as applied.
+
+11
+00:00:44,274 --> 00:00:46,333
+You can also choose the app's language here.
+
+12
+00:00:46,512 --> 00:00:47,642
+Let's get started.

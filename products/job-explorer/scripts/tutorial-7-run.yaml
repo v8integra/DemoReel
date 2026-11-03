@@ -1,0 +1,37 @@
+chapter: Run your first search
+
+scenes:
+  - say: Back on Searches, open the search you just made.
+    steps:
+      - nav: Searches
+      - click: 'main button:has-text("Senior web engineer")'
+
+  - say: Preview shows what your filters keep, without using any AI. It's a quick way to check your settings.
+    steps:
+      - scroll: { by: 2500, over: main }
+      - click: 'main button:has-text("Preview (no AI)")'
+      - waitFor: { sel: 'section.preview', timeout: 120 }
+
+  - say: It shows how many postings it found, how many passed your filters, and why the rest were left out.
+    steps:
+      - scroll: { by: 400, over: main }
+      - zoom: { on: 'section.preview >> table >> nth=0', scale: 1.35 }
+      - wait: 1.2
+      - unzoom
+
+  - say: When it looks right, click run search now. The AI reads each job that passed, and scores it against your profile.
+    steps:
+      - scroll: -400
+      - click: 'main button:has-text("Run search now")'
+      - wait: 1.5
+
+  - say: With local AI, this takes a few minutes, depending on your computer. You can keep using the app while it runs.
+    steps:
+      - skip: { until: 'main button:has-text("Open Review List")', timeout: 900 }
+
+  - say: Done. The new jobs are waiting in your Review List.
+    steps:
+      - zoom: { on: 'main section.preview .card-header', scale: 1.4 }
+      - wait: 1
+      - unzoom
+      - click: 'main button:has-text("Open Review List")'

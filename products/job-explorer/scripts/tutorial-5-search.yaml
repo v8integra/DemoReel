@@ -1,0 +1,38 @@
+chapter: Create a search
+
+scenes:
+  - say: Next, tell Job Explorer what you're looking for. Open Searches, and create your first search.
+    steps:
+      - nav: Searches
+      - click: 'main button:has-text("Create your first search")'
+
+  - say: Give it a name, then add the job titles you want. Press enter after each one.
+    steps:
+      - type: { into: '#sp-name', text: Senior web engineer, delay: 40 }
+      - type: { into: '#sp-titles', text: [Frontend Engineer, Full Stack Engineer, Software Engineer], delay: 35 }
+
+  - say: Describe the job you want in your own words. The AI uses this to judge how well each job fits.
+    steps:
+      - type: { into: '#sp-desc', text: 'Senior frontend or full-stack role on a product team, mostly React and TypeScript, with some Node.js.', delay: 18 }
+
+  - say: Add the skills you want the job to center on. You can also list skills you have, but don't want as the main part of the job.
+    steps:
+      - type: { into: '#sp-focus', text: [React, TypeScript, Node.js], delay: 40 }
+      - hover: '#sp-avoid'
+
+  - say: Then choose where you'll work. Onsite and hybrid jobs can be limited to cities near you, and remote jobs to the countries you can work in.
+    steps:
+      - hover: 'main h2:text-is("Where")'
+      - type: { into: 'input[placeholder^="Add a city"]', text: Denver, delay: 60, enter: true, pick: 0.8 }
+      - select: { in: '#sp-remote', value: US }
+
+  - say: Below that are more filters, like a minimum salary, seniority, and how recent a posting must be. The defaults are a good place to start.
+    steps:
+      - type: { into: '#sp-min', text: '130000', delay: 60 }
+      - scroll: { by: 500, over: '#sp-min' }
+      - hover: '#sp-age'
+
+  - say: When you're happy with it, click save search.
+    steps:
+      - click: 'main button:has-text("Save search")'
+      - wait: 0.8

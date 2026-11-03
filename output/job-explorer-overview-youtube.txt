@@ -1,0 +1,9 @@
+Title: Job Explorer – AI job search that stays on your PC
+
+Description:
+Job Explorer searches the job boards you choose, scores every posting against your own experience with AI, and tracks every application in one place.
+Your data stays encrypted on your computer. Use local AI and nothing leaves it at all.
+
+Get Job Explorer on the Microsoft Store.
+
+Tags: job search, AI, job tracker, resume, Windows app, local AI

@@ -1,0 +1,43 @@
+chapter: Import your resume
+
+# The AI is already chosen (saved by part 2); walk the wizard back to the resume step off camera.
+setup:
+  - click: '[role=dialog] button:has-text("Get started")'
+  - click: '.choice-card >> nth=0'
+  # With the AI already set up, the local AI step offers Continue instead of Skip for now.
+  - waitFor: '[role=dialog] button:text-is("Continue")'
+  - click: '[role=dialog] button:text-is("Continue")'
+  - waitFor: '#wizard-title:has-text("Add your resume")'
+
+scenes:
+  - say: Now add your resume. Job Explorer reads Word and PDF files.
+    steps:
+      - wait: 0.5
+      - hover: '#wizard-title'
+
+  - say: Click import resume, and choose your file.
+    steps:
+      - click: '[role=dialog] button:has-text("Import resume")'
+      - waitFor: '[role=dialog] >> text=suggestions added'
+
+  - say: It reads the resume, and turns it into suggestions for your profile, like your summary, work history, education, and skills.
+    steps:
+      - zoom: { on: '[role=dialog] >> text=suggestions added', scale: 1.5 }
+      - wait: 1.5
+      - unzoom
+
+  - say: Nothing is used until you approve it. We'll do that in a moment.
+    steps:
+      - click: '[role=dialog] button:has-text("Continue")'
+
+  - say: That's setup done. Click finish.
+    steps:
+      - wait: 0.4
+      - click: '[role=dialog] button:has-text("Finish")'
+
+  - say: Job Explorer then opens its built-in guide. It covers every feature, and you can come back to it any time from the sidebar.
+    steps:
+      - wait: 0.8
+      - hover: 'nav.guide-toc li >> nth=2'
+      - wait: 0.5
+      - hover: 'nav >> text="Guide"'

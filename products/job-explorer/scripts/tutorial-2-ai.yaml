@@ -1,0 +1,52 @@
+chapter: Set up AI
+
+# The app reopens on the welcome screen; get back to "Choose your AI" off camera.
+setup:
+  - click: '[role=dialog] button:has-text("Get started")'
+  - wait: 0.5
+
+scenes:
+  - say: Next, choose your AI. Job Explorer uses it to read each job posting, and score how well it fits you.
+    steps:
+      - wait: 0.5
+      - hover: '#wizard-title'
+
+  - say: Local AI runs right on your computer, with a free program called Ollama. It's the most private option, and it costs nothing to use.
+    steps:
+      - ring: '.choice-card >> nth=0'
+
+  - say: Cloud AI uses Claude, ChatGPT, or Gemini, with your own API key. It's fast and capable, and the provider bills you for what you use.
+    steps:
+      - ring: '.choice-card >> nth=1'
+
+  - say: We'll use local AI.
+    steps:
+      - ring: off
+      - click: '.choice-card >> nth=0'
+
+  - say: Job Explorer checks your computer first. Here it found a graphics card with eight gigabytes of memory, and recommends a model that suits it.
+    steps:
+      - wait: 0.6
+      - zoom: { on: '.hw-summary', scale: 1.5 }
+      - wait: 1.5
+      - unzoom
+
+  - say: If you don't have Ollama yet, install it from the Ollama website, then start it. On this computer, it's already installed and running.
+    steps:
+      - ring: 'ol.local-steps > li >> nth=0'
+      - wait: 1.6
+      - ring: 'ol.local-steps > li >> nth=1'
+
+  - say: Then pick a model to download. The recommended one is marked for you. Bigger models give better results, but need a bigger graphics card.
+    steps:
+      - ring: off
+      - ring: 'label.model-choice.selected'
+      - wait: 1.2
+      - ring: off
+      - scroll: { by: 240, over: 'label.model-choice.selected' }
+      - hover: 'label.model-choice:has-text("Qwen 3.5 27B")'
+
+  - say: Click use, and Job Explorer runs a quick test to make sure the model works on your computer.
+    steps:
+      - click: 'button:has-text("Use Qwen 3.5 9B")'
+      - skip: { until: '#wizard-title:has-text("Add your resume")', timeout: 300 }

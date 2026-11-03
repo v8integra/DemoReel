@@ -1,0 +1,19 @@
+Title: How to use Job Explorer – from setup to your first AI-scored jobs
+
+Description:
+A complete walkthrough of Job Explorer: setting up local AI, importing your resume, approving your profile, creating a search, choosing job sources, and reviewing your first AI-scored jobs.
+The jobs in this video are real postings from the companies' public job boards on the day it was recorded. The person and resume are made up.
+
+Get Job Explorer on the Microsoft Store.
+
+Chapters:
+0:00 Welcome and privacy
+0:48 Set up AI
+1:52 Import your resume
+2:26 Approve your profile
+3:08 Create a search
+3:58 Choose where to look
+4:44 Run your first search
+5:24 Your first results
+
+Tags: Job Explorer, job search, AI job search, tutorial, how to, local AI, Ollama, resume, job tracker
