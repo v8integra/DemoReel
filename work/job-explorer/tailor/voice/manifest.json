@@ -1,0 +1,133 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Every job asks for something a little different.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\0b9bb4cc2cac848d.wav",
+     "seconds": 2.333375
+    },
+    {
+     "text": "Job Explorer tailors your resume to each one, using only your own experience.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\8944ca12801b2125.wav",
+     "seconds": 4.768583333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Start from a job in your Review List, and click tailor resume.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\5a8750746ab44e97.wav",
+     "seconds": 3.2922083333333334
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Choose a template.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\c0e1edda7213e741.wav",
+     "seconds": 1.0015416666666668
+    },
+    {
+     "text": "They're all single-column with standard headings, so applicant tracking systems can read them.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\c8af93c8912010b1.wav",
+     "seconds": 5.009166666666666
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "The AI chooses which parts of your experience to lead with for this job, and may reword them lightly.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\3ae98047d3bc855e.wav",
+     "seconds": 5.558
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Anything that would add a fact you haven't approved is put back to your own wording, so it never makes up experience.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\de7ad2ef1ca81f0a.wav",
+     "seconds": 5.942708333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "With local AI, writing takes a couple of minutes.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\2b5e8c9315145ff9.wav",
+     "seconds": 2.922375
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "The draft is ready, along with a summary of what the AI did.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\900a71840653a328.wav",
+     "seconds": 3.357666666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Every change comes with a reason, tied to what the job asks for.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\de6b95d73c0b6d1e.wav",
+     "seconds": 3.70625
+    },
+    {
+     "text": "You can see exactly why your resume looks the way it does.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\aed88278382d5835.wav",
+     "seconds": 2.977375
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "You can edit any line, or remove it.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\bbd6df87ce782642.wav",
+     "seconds": 1.9794166666666666
+    },
+    {
+     "text": "Titles, dates, and contact details always come from your Profile.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\35c6af9212b30aa1.wav",
+     "seconds": 3.89225
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Then export it as a Word file or a PDF, ready to upload.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\7bf01c9122287ab5.wav",
+     "seconds": 3.6748333333333334
+    },
+    {
+     "text": "And approve it when it looks right.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\46cb706e6a47ea43.wav",
+     "seconds": 1.4520833333333334
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Job Explorer.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\c53cba8731b3bb52.wav",
+     "seconds": 1.0260833333333332
+    },
+    {
+     "text": "Get it on the Microsoft Store.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\tailor\\voice\\190bab4cbfaa1376.wav",
+     "seconds": 1.61475
+    }
+   ]
+  }
+ ]
+}

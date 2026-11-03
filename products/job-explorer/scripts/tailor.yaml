@@ -1,0 +1,99 @@
+# Tailor your resume for a job: about 75 seconds, 16:9. Demo data; the tailoring is done live by the local AI.
+title: Tailor your resume for any job
+voice: af_heart
+speed: 1.0
+size: [1280, 720]
+scale: 1.5
+captions: true
+thumbnailAt: 1.6
+
+youtube:
+  title: Tailor your resume to every job with AI – Job Explorer
+  description: |
+    Job Explorer tailors your resume to each job using only your own experience. The AI chooses what to lead with and may reword lightly; anything that would add a fact you haven't approved is put back to your original wording. You see exactly what changed and why, then edit, export to Word or PDF, and approve.
+    The person in this video is made up. The tailoring was done live by local AI on the recording computer.
+
+    Get Job Explorer on the Microsoft Store.
+  tags: [Job Explorer, tailored resume, resume, AI resume, job search, ATS, local AI]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Tailor your resume to any job
+      subtitle: Using only your own experience
+    say: Every job asks for something a little different. Job Explorer tailors your resume to each one, using only your own experience.
+    hold: 0.3
+
+  - card: null
+    say: Start from a job in your Review List, and click tailor resume.
+    steps:
+      - wait: 0.4
+      - hover: 'article.review-card:has-text("Brightwater") >> .job-title'
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Tailor resume")'
+
+  - say: Choose a template. They're all single-column with standard headings, so applicant tracking systems can read them.
+    steps:
+      - wait: 0.5
+      - zoom: { on: '[role=dialog] iframe', scale: 1.35 }
+      - select: { in: '#tp-select', value: modern }
+      - wait: 1.2
+      - unzoom
+
+  - say: The AI chooses which parts of your experience to lead with for this job, and may reword them lightly.
+    steps:
+      - ring: '[role=dialog] p.small >> nth=0'
+      - wait: 1.5
+      - ring: off
+
+  - say: Anything that would add a fact you haven't approved is put back to your own wording, so it never makes up experience.
+    steps:
+      - hover: '[role=dialog] button.primary:has-text("Tailor resume")'
+
+  - say: With local AI, writing takes a couple of minutes.
+    steps:
+      - click: '[role=dialog] button.primary:has-text("Tailor resume")'
+      - skip: { until: '[role=dialog] button:has-text("Review the draft")', timeout: 900 }
+
+  - say: The draft is ready, along with a summary of what the AI did.
+    steps:
+      - zoom: { on: '[role=dialog] p.ok-text', scale: 1.4 }
+      - wait: 1
+      - unzoom
+      - click: '[role=dialog] button:has-text("Review the draft")'
+
+  - say: Every change comes with a reason, tied to what the job asks for. You can see exactly why your resume looks the way it does.
+    steps:
+      - wait: 0.6
+      - zoom: { on: '.tailor-report', scale: 1.35 }
+      - wait: 2.5
+      - unzoom
+
+  - say: You can edit any line, or remove it. Titles, dates, and contact details always come from your Profile.
+    steps:
+      - scroll: { by: 450, over: '.resume-editor' }
+      - hover: '.editor-bullet textarea >> nth=0'
+      - wait: 0.8
+      - hover: '.editor-bullet button >> nth=0'
+      - wait: 0.5
+      - scroll: -450
+
+  - say: Then export it as a Word file or a PDF, ready to upload. And approve it when it looks right.
+    steps:
+      - hover: 'main button:has-text("Export DOCX")'
+      - wait: 0.5
+      - hover: 'main button:has-text("Export PDF")'
+      - wait: 0.4
+      - click: 'main button:has-text("Approve resume")'
+      - wait: 0.6
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Tailored resumes, from your own experience.
+      cta: Get it on the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.5

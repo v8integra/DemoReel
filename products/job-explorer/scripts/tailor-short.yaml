@@ -1,0 +1,77 @@
+# Tailored resume YouTube Short: about 30 seconds, 9:16. Demo data; the tailoring is done live by the local AI.
+title: Tailor your resume Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  .split { grid-template-columns: 1fr !important; }
+  .resume-list, .split > :first-child:not(.resume-detail) { display: none !important; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: Stop sending the same resume to every job #shorts
+  description: |
+    Job Explorer tailors your resume to each job using only your own experience, and shows you exactly what it changed and why.
+    Get Job Explorer on the Microsoft Store.
+  tags: [resume, tailored resume, AI, job search, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: One resume doesn't fit every job.
+    say: Stop sending the same resume to every job. Let AI tailor it, without making anything up.
+
+  - card: null
+    say: Pick a job, and tap tailor resume. Then choose one of the built-in templates.
+    steps:
+      - wait: 0.3
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Tailor resume")'
+      - zoom: { on: '[role=dialog] iframe', scale: 1.3 }
+      - select: { in: '#tp-select', value: modern }
+      - wait: 0.8
+      - unzoom
+
+  - say: The AI picks what to lead with, using only your own experience. Anything it can't verify goes back to your own words.
+    steps:
+      - click: '[role=dialog] button.primary:has-text("Tailor resume")'
+      - skip: { until: '[role=dialog] button:has-text("Review the draft")', timeout: 900 }
+
+  - say: Then see exactly what it changed, and the reason for every change.
+    steps:
+      - click: '[role=dialog] button:has-text("Review the draft")'
+      - wait: 0.5
+      # The report is nearly as wide as the phone screen, so only a light zoom keeps every line whole.
+      - zoom: { on: '.tailor-report', scale: 1.1 }
+      - wait: 1.6
+
+  - say: Edit any line, export to Word or PDF, and you're ready to apply.
+    steps:
+      - unzoom
+      - zoom: { on: 'main button:has-text("Export PDF")', scale: 1.5 }
+      - hover: 'main button:has-text("Export DOCX")'
+      - wait: 0.4
+      - hover: 'main button:has-text("Export PDF")'
+      - wait: 0.4
+
+  - steps:
+      - unzoom
+    card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Tailored resumes, from your own experience.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2
