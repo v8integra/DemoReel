@@ -28,6 +28,8 @@ export async function record({ product, script, workDir, userData }) {
     await page.evaluate(fs.readFileSync(path.join(root, 'src', 'overlay.js'), 'utf8'));
     if (script.css || script.captionStyle) await page.evaluate((o) => window.__demoreel.style(o), { css: script.css, caption: script.captionStyle });
     if (script.openFiles?.length) await standInFilePicker(app, script.openFiles.map((f) => path.resolve(script.dir, f)));
+    // Confirmation boxes ("Report as scam?") are answered OK; Playwright would otherwise cancel them.
+    if (script.acceptDialogs) page.on('dialog', (d) => void d.accept().catch(() => {}));
     if (script.setup) await runSteps(page, script.setup, { mouse: { x: vw / 2, y: vh / 2 } }, script);
 
     // Filmed time: wall time minus the stretches a `skip` step cut out. Frames that arrive before
@@ -229,6 +231,22 @@ export async function runSteps(page, steps, ctx, script) {
         await sleep(0.3);
         break;
       }
+      case 'reveal': {
+        // Smoothly scrolls an element near the top of the screen, clear of the captions.
+        const a = typeof arg === 'string' ? { sel: arg } : arg;
+        await loc(page, a.sel).evaluate((e, block) => e.scrollIntoView({ behavior: 'smooth', block }), a.block ?? 'start');
+        await sleep(0.9);
+        break;
+      }
+      case 'paste': {
+        // Long text appears at once, the way a real paste does.
+        const l = await moveTo(page, ctx, arg.into, script);
+        await l.click();
+        await sleep(0.2);
+        await l.fill(String(arg.text));
+        await sleep(0.4);
+        break;
+      }
       case 'clickAll': {
         // Clicks each matching control in turn (e.g. every "Approve"), re-finding it after each click.
         const a = typeof arg === 'string' ? { sel: arg } : arg;
@@ -240,14 +258,16 @@ export async function runSteps(page, steps, ctx, script) {
         break;
       }
       case 'skip': {
-        // Cuts out a long wait (an AI run, a download): filming pauses until `until` appears.
+        // Cuts out a long wait (an AI run, a download): filming pauses until `until` appears
+        // (or until `gone` disappears, e.g. a "Running…" label).
         const a = typeof arg === 'string' ? { until: arg } : arg;
         await ctx.speaking;
         await sleep(0.3);
         ctx.pause();
         const started = now();
         try {
-          await loc(page, a.until).waitFor({ state: 'visible', timeout: (a.timeout ?? 900) * 1000 });
+          if (a.gone) await loc(page, a.gone).waitFor({ state: 'hidden', timeout: (a.timeout ?? 900) * 1000 });
+          else await loc(page, a.until).waitFor({ state: 'visible', timeout: (a.timeout ?? 900) * 1000 });
           await sleep(a.settle ?? 0.6);
         } finally {
           ctx.resume();

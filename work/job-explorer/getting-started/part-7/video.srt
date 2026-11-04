@@ -1,39 +1,39 @@
 1
-00:00:02,899 --> 00:00:05,514
+00:00:02,896 --> 00:00:05,513
 Back on Searches, open the search you just made.
 
 2
-00:00:06,391 --> 00:00:09,786
+00:00:06,371 --> 00:00:09,769
 Preview shows what your filters keep, without using any AI.
 
 3
-00:00:09,978 --> 00:00:11,699
+00:00:09,959 --> 00:00:11,679
 It's a quick way to check your settings.
 
 4
-00:00:13,181 --> 00:00:18,590
+00:00:13,470 --> 00:00:18,882
 It shows how many postings it found, how many passed your filters, and why the rest were left out.
 
 5
-00:00:19,451 --> 00:00:21,567
+00:00:19,742 --> 00:00:21,855
 When it looks right, click run search now.
 
 6
-00:00:21,756 --> 00:00:25,786
+00:00:22,047 --> 00:00:26,069
 The AI reads each job that passed, and scores it against your profile.
 
 7
-00:00:26,640 --> 00:00:30,467
+00:00:26,936 --> 00:00:30,762
 With local AI, this takes a few minutes, depending on your computer.
 
 8
-00:00:30,658 --> 00:00:32,663
+00:00:30,944 --> 00:00:32,944
 You can keep using the app while it runs.
 
 9
-00:00:35,635 --> 00:00:36,137
+00:00:35,918 --> 00:00:36,419
 Done.
 
 10
-00:00:36,320 --> 00:00:38,488
+00:00:36,603 --> 00:00:38,771
 The new jobs are waiting in your Review List.

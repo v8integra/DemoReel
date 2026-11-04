@@ -1,0 +1,115 @@
+{
+ "scenes": [
+  {
+   "lines": [
+    {
+     "text": "Checking job boards every day gets old fast.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\7c2ae98b8b6d4434.wav",
+     "seconds": 2.6670833333333333
+    },
+    {
+     "text": "Searcher Mode runs your searches for you, on a schedule.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\ad1c3972fc71c3b8.wav",
+     "seconds": 2.9603333333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Open Searcher, and choose when it runs.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\6d7a7931b5ba09d4.wav",
+     "seconds": 2.264666666666667
+    },
+    {
+     "text": "Pick set times of day, or a number of runs a day.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\d4d89f17c05c7e02.wav",
+     "seconds": 2.6707083333333332
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "We'll add a second run in the afternoon, so new jobs get checked twice a day.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\8b401bd70eb4c1c4.wav",
+     "seconds": 4.080041666666666
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Keep running in the system tray is on by default, so closing the window won't stop your scheduled runs.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\dcd20265bacf8baa.wav",
+     "seconds": 6.020083333333333
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Then turn Searcher Mode on.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\7b3c1973f537f35c.wav",
+     "seconds": 1.4579583333333332
+    },
+    {
+     "text": "Missed runs are skipped, not made up later.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\1398f1d3ff2f4cc5.wav",
+     "seconds": 2.326208333333333
+    },
+    {
+     "text": "And it never applies for you.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\03dcfb9fc3dafe4c.wav",
+     "seconds": 1.3599166666666667
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "You can also run your searches any time, with run searches now.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\fa3a80258e040a44.wav",
+     "seconds": 3.419
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Every run is logged with what it found, and you get a notice in the app.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\22a1338df0fe9f4b.wav",
+     "seconds": 3.82275
+    },
+    {
+     "text": "If the window is in the background, you get a Windows notification too.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\56c9413f476eb450.wav",
+     "seconds": 3.911875
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "New jobs wait in your Review List, already scored against your profile, ready when you are.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\5ef2dd025ec58c60.wav",
+     "seconds": 4.897166666666666
+    }
+   ]
+  },
+  {
+   "lines": [
+    {
+     "text": "Job Explorer.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\c53cba8731b3bb52.wav",
+     "seconds": 1.0260833333333332
+    },
+    {
+     "text": "Get it on the Microsoft Store.",
+     "file": "C:\\Users\\Raven\\Desktop\\Projects\\DemoReel\\work\\job-explorer\\searcher\\voice\\190bab4cbfaa1376.wav",
+     "seconds": 1.61475
+    }
+   ]
+  }
+ ]
+}

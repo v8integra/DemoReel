@@ -1,0 +1,81 @@
+# Private by design YouTube Short: about 35 seconds, 9:16. Demo data; no AI calls, so every take is the same.
+# Every claim here is worded from the app's own screens (AI Providers, Settings, the welcome screen).
+title: Privacy Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  /* Phone-sized page (recording only): CSS zoom scales everything and re-flows it to the narrow screen. */
+  main.content { zoom: 1.35; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: A job search app that keeps your data on your PC #shorts
+  description: |
+    Job Explorer can run its AI on your own computer, so your resume never goes to an AI service, and it's free. With a cloud AI, your name, email, phone, and address are never sent. Everything is stored encrypted, with an optional master password and password-protected backups. No account, and nothing is sent to the app's maker.
+    Get Job Explorer on the Microsoft Store.
+  tags: [privacy, local AI, Ollama, job search, encrypted, shorts]
+
+setup:
+  - nav: AI Providers
+  - wait: 0.6
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Private by design.
+    say: Your job search is personal. Here's how Job Explorer keeps it that way.
+
+  - card: null
+    say: It can run its AI right on your computer, with Ollama. Your resume never goes to an AI service, and it's free.
+    steps:
+      - wait: 0.3
+      - ring: 'main section:has(h2:text-is("Active provider"))'
+      - wait: 1.6
+      - ring: 'main tr:has-text("Ollama (local)")'
+      - wait: 1.4
+      - ring: off
+
+  - say: Prefer a cloud AI? Your name, email, phone, and address are never sent to any AI.
+    steps:
+      - ring: 'main >> text=Contact details (name, email, phone, address) are never sent to any AI'
+      - wait: 2
+      - ring: off
+
+  - say: Everything is stored encrypted, with a key your Windows sign-in protects. There's no account, and nothing is sent to the app's maker.
+    steps:
+      - nav: Settings
+      - reveal: { sel: 'main section:has(h2:text-is("Master password"))', block: start }
+      - ring: 'main section:has(h2:text-is("Master password")) p >> nth=0'
+      - wait: 2
+      - ring: off
+
+  - say: Want a second lock? Turn on a master password, and nothing opens without it.
+    steps:
+      - ring: 'main section:has(h2:text-is("Master password")) button:has-text("Turn on")'
+      - wait: 1.6
+      - ring: off
+
+  - say: And back up everything to one password-protected file, for a USB drive or your own cloud storage.
+    steps:
+      - reveal: { sel: 'main section:has(h2:text-is("Backup and restore"))', block: center }
+      - ring: 'main section:has(h2:text-is("Backup and restore"))'
+      - wait: 2
+      - ring: off
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Private by design.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2

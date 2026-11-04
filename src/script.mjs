@@ -45,7 +45,21 @@ export function loadSequence(file) {
   return { start: 'fresh', ...raw, file, parts };
 }
 
+// A sentence ends at ". ! ?" before a space and a capital, digit, or quote (or the end), so
+// "Node.js" and "3.5" stay whole; initials ("U.S.") and titles ("Dr.") don't end one.
+const SENTENCE_END = /[.!?]+["”’)]*(?=\s+[\p{Lu}\p{Lo}\p{N}"“‘'(]|\s*$)/gu;
+const ABBREVIATIONS = new Set(['mr', 'mrs', 'ms', 'dr', 'prof', 'sr', 'jr', 'st', 'vs']);
+
 /** Splits narration into caption-sized sentences. */
 export function sentences(text) {
-  return (text.match(/[^.!?]+[.!?]+["”’)]*|[^.!?]+$/g) ?? []).map((s) => s.trim()).filter(Boolean);
+  const out = [];
+  let start = 0;
+  for (const m of text.matchAll(SENTENCE_END)) {
+    const word = text.slice(start, m.index).match(/[\p{L}.]+$/u)?.[0] ?? '';
+    if (m[0].startsWith('.') && (/^(?:\p{L}\.)+\p{L}$/u.test(word) || ABBREVIATIONS.has(word.toLowerCase()))) continue;
+    out.push(text.slice(start, m.index + m[0].length));
+    start = m.index + m[0].length;
+  }
+  out.push(text.slice(start));
+  return out.map((s) => s.trim()).filter(Boolean);
 }

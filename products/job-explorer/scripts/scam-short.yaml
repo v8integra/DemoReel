@@ -1,0 +1,90 @@
+# Spot job scams YouTube Short: about 30 seconds, 9:16. Demo data plus a made-up scam posting pasted in live.
+# The warning signs come from Job Explorer's fixed rules, so they're the same on every take.
+title: Spot job scams Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+acceptDialogs: true
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: How to spot a fake job posting before it costs you #shorts
+  description: |
+    Job Explorer checks every posting for scam warning signs, like requests for bank details, checks in the mail, or interviews over chat apps. Report a scam and that company's jobs are hidden from then on.
+    The company and posting in this video are made up.
+    Get Job Explorer on the Microsoft Store.
+  tags: [job scam, fake job, job search, scam warning signs, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Spot fake jobs before they cost you.
+    say: Fake job postings are everywhere. Here's how to spot one, before it costs you.
+
+  - card: null
+    say: Found a job somewhere else? Tap add a job, and paste in the details. It works for postings from LinkedIn, Indeed, or anywhere.
+    steps:
+      - wait: 0.3
+      - click: 'main button:has-text("Add a job")'
+      - paste: { into: '#aj-url', text: 'https://jobs.example.com/apex/remote-web-developer' }
+      - type: { into: '#aj-title', text: 'Remote Web Developer', delay: 25 }
+      - type: { into: '#aj-company', text: 'Apex Global Solutions', delay: 25 }
+      - paste:
+          into: '#aj-desc'
+          text: >-
+            Earn up to $900 per week from home! No experience needed. After a quick interview on Telegram
+            you will receive a check in the mail to buy your own equipment and software, and you will be
+            reimbursed. Send your bank account details for direct deposit setup immediately. Contact
+            apex.hiring.team@gmail.com. Limited positions available, apply today!
+
+  - say: Job Explorer scores it, and checks it for scam warning signs.
+    steps:
+      - click: '[role=dialog] button:has-text("Add and score")'
+      - skip: { until: 'article.review-card:has-text("Apex Global")', timeout: 300, label: 'A few seconds later' }
+
+  - say: This one wants your bank details, mails you a check, and interviews you on Telegram. Those are classic scam signs.
+    steps:
+      - reveal: 'article.review-card:has-text("Apex Global")'
+      - hover: 'article.review-card:has-text("Apex Global") >> .status-badge.warn'
+      - ring: 'article.review-card:has-text("Apex Global") >> p.warn-text:has-text("Possible scam warning signs")'
+      - wait: 2.5
+      - ring: off
+
+  - say: Report it, and that company's jobs are hidden from now on.
+    steps:
+      - click: 'article.review-card:has-text("Apex Global") >> button:has-text("Report as scam")'
+      - waitFor: 'main >> text=added to your scam list'
+      - ring: 'main >> text=added to your scam list'
+      - wait: 1
+      - ring: off
+
+  - say: It goes on your scam list, which you can export and share with friends who are job hunting too.
+    steps:
+      - nav: Job Sources
+      - scroll: { by: 1400, over: main }
+      - zoom: { on: 'main section:has(h2:text-is("Scam list"))', scale: 1.15 }
+      - wait: 1.5
+
+  - steps:
+      - unzoom
+    card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Job search that watches your back.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2

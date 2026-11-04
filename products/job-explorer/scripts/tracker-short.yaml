@@ -1,0 +1,87 @@
+# Track every application YouTube Short: about 30 seconds, 9:16. Demo data; no AI calls, so every take is the same.
+title: Tracker Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  table th:nth-child(n+4):not(:nth-child(9)), table td:nth-child(n+4):not(:nth-child(9)) { display: none !important; }
+  /* Phone-sized text for the table (recording only). */
+  main table { font-size: 18px !important; }
+  main table td, main table th { padding-top: 14px !important; padding-bottom: 14px !important; }
+  main table select { font-size: 16px !important; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: Stop losing track of your job applications #shorts
+  description: |
+    Job Explorer keeps every application in one place: mark a job applied and it moves to your Tracker, update its status as you hear back, keep notes and contacts, and get a polite follow-up email drafted when a company goes quiet.
+    The person and companies in this video are made up.
+    Get Job Explorer on the Microsoft Store.
+  tags: [job tracker, job applications, job search, follow up email, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Every application, in one place.
+    say: Applied to a dozen jobs, and already lost track? Here's a better way.
+
+  - card: null
+    say: When you apply for a job, mark it applied. It goes straight to your Tracker.
+    steps:
+      - wait: 0.3
+      - click: 'article.review-card:has-text("Brightwater") >> button:text-is("Applied")'
+      - wait: 0.5
+      - click: '[role=dialog] button:has-text("Add to Tracker")'
+      - nav: Tracker
+
+  - say: Every application, the date you applied, and where it stands, all in one list.
+    steps:
+      - ring: 'main tr:has-text("Brightwater")'
+      - wait: 1.5
+      - ring: off
+
+  - say: Heard back? Update the status in one tap, from applied, to interviewing, to an offer.
+    steps:
+      - select: { in: 'main tr:has-text("Harborline") select', value: interviewing }
+      - wait: 0.6
+      - ring: 'main tr:has-text("Harborline")'
+      - wait: 1
+      - ring: off
+
+  - say: Open any application for its notes, contacts, and full history.
+    steps:
+      - click: 'main tr:has-text("Meadowlark") >> td >> nth=1'
+      - wait: 0.8
+      - reveal: { sel: '.app-detail >> text=Status history', block: center }
+      - zoom: { on: '.app-detail >> text=Status history', scale: 1.6 }
+      - wait: 1
+
+  - say: And if a company goes quiet, Job Explorer drafts a polite follow-up email, for you to check and send yourself.
+    steps:
+      - unzoom
+      - reveal: { sel: '.app-detail >> text=Follow up', block: center }
+      - zoom: { on: '.app-detail >> text=Follow up', scale: 1.6 }
+      - hover: '.app-detail button:has-text("Draft a follow-up email")'
+      - wait: 1.8
+      - unzoom
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Never lose track of an application.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2

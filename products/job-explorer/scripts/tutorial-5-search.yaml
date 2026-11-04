@@ -8,7 +8,8 @@ scenes:
 
   - say: Give it a name, then add the job titles you want. Press enter after each one.
     steps:
-      - type: { into: '#sp-name', text: Senior web engineer, delay: 40 }
+      # The name field starts filled with "New search": replace it, don't type after it.
+      - type: { into: '#sp-name', text: Senior web engineer, delay: 40, clear: true }
       - type: { into: '#sp-titles', text: [Frontend Engineer, Full Stack Engineer, Software Engineer], delay: 35 }
 
   - say: Describe the job you want in your own words. The AI uses this to judge how well each job fits.

@@ -1,0 +1,48 @@
+{
+  "format": "jobsearcher-scam-list",
+  "version": 1,
+  "entries": [
+    {
+      "id": "mw1aco8p93z3qp",
+      "kind": "company",
+      "value": "Apex Global Solutions",
+      "company": "",
+      "reason": "Reported by you",
+      "signals": [
+        "Asks you to pay a fee or buy equipment",
+        "Mentions money transfers, gift cards, or depositing checks",
+        "Asks for bank, ID, or Social Security details up front",
+        "Interview or contact through a chat app",
+        "Uses a personal email address",
+        "Promises unusually high or easy pay",
+        "Pressure to act fast",
+        "No experience needed for a well-paid role",
+        "The AI found this posting suspicious"
+      ],
+      "source": "user",
+      "addedAt": "2026-11-03T22:54:58.490Z",
+      "falsePositive": false
+    },
+    {
+      "id": "mw1aco8sec5kv7",
+      "kind": "url",
+      "value": "https://jobs.example.com/apex/remote-web-developer",
+      "company": "Apex Global Solutions",
+      "reason": "Reported by you",
+      "signals": [
+        "Asks you to pay a fee or buy equipment",
+        "Mentions money transfers, gift cards, or depositing checks",
+        "Asks for bank, ID, or Social Security details up front",
+        "Interview or contact through a chat app",
+        "Uses a personal email address",
+        "Promises unusually high or easy pay",
+        "Pressure to act fast",
+        "No experience needed for a well-paid role",
+        "The AI found this posting suspicious"
+      ],
+      "source": "user",
+      "addedAt": "2026-11-03T22:54:58.492Z",
+      "falsePositive": false
+    }
+  ]
+}

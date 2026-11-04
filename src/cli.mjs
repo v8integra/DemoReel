@@ -72,9 +72,14 @@ if (cmd === 'seed') {
   if (cmd !== 'voice') {
     const { record } = await import('./record.mjs');
     const userData = path.join(workDir, 'profile');
-    // `start: fresh` films a brand-new install (first-run setup); otherwise the demo data is used.
+    // `start: fresh` films a brand-new install (first-run setup); `start: { from: 'getting-started/state-8' }`
+    // starts from app data a sequence saved (work/<product>/...); otherwise the demo data is used.
     if (script.start === 'fresh') fs.rmSync(userData, { recursive: true, force: true });
-    else {
+    else if (script.start?.from) {
+      const from = path.join(root, 'work', productName, script.start.from);
+      if (!fs.existsSync(from)) throw new Error(`No saved app data at ${from}. Record that sequence first.`);
+      copyDir(from, userData);
+    } else {
       if (!fs.existsSync(seedProfile)) throw new Error(`No demo data yet. Run: node src/cli.mjs seed ${productName}`);
       copyDir(seedProfile, userData);
     }

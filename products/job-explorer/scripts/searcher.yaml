@@ -1,0 +1,97 @@
+# Searcher Mode: about 70 seconds, 16:9. Starts from the getting-started tutorial's final app data (real job
+# boards: Reddit, Coinbase, Vanta) and runs a real search, so what a run finds changes from take to take.
+title: Searcher Mode
+start: { from: getting-started/state-8 }
+voice: af_heart
+speed: 1.0
+size: [1280, 720]
+scale: 1.5
+captions: true
+thumbnailAt: 1.6
+
+youtube:
+  title: Let Job Explorer search for jobs on a schedule – Searcher Mode
+  description: |
+    Searcher Mode runs your job searches on a schedule, at set times or a number of times a day, even with the window closed to the system tray. Each run is logged, you get a notice with what it found, and new jobs wait in your Review List, scored by AI. Job Explorer never applies for you.
+    The search in this video checks real public job boards. The person is made up.
+
+    Get Job Explorer on the Microsoft Store.
+  tags: [Job Explorer, Searcher Mode, job search automation, job alerts, AI job search]
+
+setup:
+  # Older tutorial takes saved the search as "New searchSenior web engineer"; show the intended name.
+  - eval: "(async () => { const [p] = await window.api.search.listProfiles(); const { id, createdAt, updatedAt, ...rest } = p; await window.api.search.updateProfile(id, { ...rest, name: 'Senior web engineer' }); })()"
+  - nav: Searcher
+  - wait: 0.8
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Searcher Mode
+      subtitle: Let Job Explorer do the daily checking
+    say: Checking job boards every day gets old fast. Searcher Mode runs your searches for you, on a schedule.
+    hold: 0.3
+
+  - card: null
+    say: Open Searcher, and choose when it runs. Pick set times of day, or a number of runs a day.
+    steps:
+      - wait: 0.4
+      - ring: 'main section:has(h2:text-is("Schedule"))'
+      - wait: 0.8
+      - ring: off
+      - click: 'main button:has-text("A number of times a day")'
+      - wait: 1
+      - click: 'main button:has-text("At set times")'
+
+  - say: We'll add a second run in the afternoon, so new jobs get checked twice a day.
+    steps:
+      - paste: { into: 'main input[type="time"]', text: '13:00' }
+      - click: 'main button:has-text("Add time")'
+      - wait: 0.8
+
+  # The tray switch is on by default: point at it, don't click it (a click would turn it off).
+  - say: Keep running in the system tray is on by default, so closing the window won't stop your scheduled runs.
+    steps:
+      - ring: 'main section:has(h2:text-is("While the window is closed"))'
+      - hover: 'main div.field:has-text("Keep running in the system tray") button'
+      - wait: 1.5
+      - ring: off
+
+  - say: Then turn Searcher Mode on. Missed runs are skipped, not made up later. And it never applies for you.
+    steps:
+      - click: 'main header button:has-text("Turn on Searcher Mode")'
+      - wait: 0.8
+      - zoom: { on: 'main header', scale: 1.4 }
+      - wait: 1.2
+      - unzoom
+
+  - say: You can also run your searches any time, with run searches now.
+    steps:
+      - click: 'main button:has-text("Run searches now")'
+      - wait: 1
+      - skip: { gone: 'main >> text=Running…', timeout: 900 }
+
+  - say: Every run is logged with what it found, and you get a notice in the app. If the window is in the background, you get a Windows notification too.
+    steps:
+      - reveal: { sel: 'main section:has(h2:text-is("Recent runs"))', block: center }
+      - ring: 'main section:has(h2:text-is("Recent runs"))'
+      - wait: 1.6
+      - ring: 'main section:has(h2:text-is("Latest notices"))'
+      - wait: 1.6
+      - ring: off
+
+  - say: New jobs wait in your Review List, already scored against your profile, ready when you are.
+    steps:
+      - nav: Review List
+      - wait: 0.6
+      - zoom: { on: 'article.review-card >> nth=0', scale: 1.25 }
+      - wait: 1.5
+      - unzoom
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Your job search, on autopilot. You stay in charge.
+      cta: Get it on the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.5

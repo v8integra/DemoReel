@@ -1,51 +1,51 @@
 1
-00:00:02,921 --> 00:00:05,669
+00:00:02,920 --> 00:00:05,670
 Next, tell Job Explorer what you're looking for.
 
 2
-00:00:05,849 --> 00:00:08,230
+00:00:05,850 --> 00:00:08,233
 Open Searches, and create your first search.
 
 3
-00:00:09,091 --> 00:00:11,980
+00:00:09,098 --> 00:00:11,983
 Give it a name, then add the job titles you want.
 
 4
-00:00:12,160 --> 00:00:13,771
+00:00:12,170 --> 00:00:13,768
 Press enter after each one.
 
 5
-00:00:15,578 --> 00:00:18,073
+00:00:15,526 --> 00:00:18,018
 Describe the job you want in your own words.
 
 6
-00:00:18,258 --> 00:00:21,473
+00:00:18,197 --> 00:00:21,416
 The AI uses this to judge how well each job fits.
 
 7
-00:00:22,335 --> 00:00:24,550
+00:00:22,270 --> 00:00:24,480
 Add the skills you want the job to center on.
 
 8
-00:00:24,737 --> 00:00:28,926
+00:00:24,671 --> 00:00:28,864
 You can also list skills you have, but don't want as the main part of the job.
 
 9
-00:00:29,794 --> 00:00:31,140
+00:00:29,737 --> 00:00:31,087
 Then choose where you'll work.
 
 10
-00:00:31,327 --> 00:00:37,744
+00:00:31,267 --> 00:00:37,684
 Onsite and hybrid jobs can be limited to cities near you, and remote jobs to the countries you can work in.
 
 11
-00:00:38,612 --> 00:00:44,828
+00:00:38,539 --> 00:00:44,763
 Below that are more filters, like a minimum salary, seniority, and how recent a posting must be.
 
 12
-00:00:45,008 --> 00:00:47,009
+00:00:44,947 --> 00:00:46,948
 The defaults are a good place to start.
 
 13
-00:00:47,862 --> 00:00:49,958
+00:00:47,807 --> 00:00:49,901
 When you're happy with it, click save search.

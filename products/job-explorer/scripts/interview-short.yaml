@@ -1,0 +1,80 @@
+# Interview prep YouTube Short: about 35 seconds, 9:16. Demo data; the prep is written live by the local AI
+# (about 3 minutes, cut), so the questions and talking points change from take to take.
+title: Interview prep Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  /* Phone-sized dialog and text (recording only). */
+  [role=dialog] .wizard { max-width: 96vw !important; width: 96vw !important; font-size: 19px !important; }
+  [role=dialog] .wizard h2 { font-size: 25px !important; }
+  [role=dialog] .wizard .small, [role=dialog] .wizard .muted { font-size: 16px !important; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: Walk into your next interview ready #shorts
+  description: |
+    Job Explorer prepares you for an interview from the job posting and your own experience: likely questions and why they'll come up, talking points tied to what you've actually done, and questions to ask them. Save it as a PDF.
+    The person and company in this video are made up. The prep was written live by local AI.
+    Get Job Explorer on the Microsoft Store.
+  tags: [interview prep, job interview, interview questions, job search, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Walk into every interview ready.
+    say: Got the interview? Here's how to walk in ready.
+
+  - card: null
+    say: Tap interview prep on the job. Job Explorer reads the posting, and your own profile.
+    steps:
+      - wait: 0.3
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Interview prep")'
+      - wait: 0.6
+      - ring: '[role=dialog] p >> nth=1'
+      - wait: 1
+      - ring: off
+
+  - say: Then it writes your prep. Anything it can't back up from your profile is taken out.
+    steps:
+      - click: '[role=dialog] button.primary:has-text("Write interview prep")'
+      - skip: { until: '[role=dialog] h2:text-is("Likely questions")', timeout: 900 }
+
+  # The finished prep fills the screen width, so sections are scrolled into view, not zoomed (a zoom crops lines).
+  - say: You get the questions they're likely to ask, and why, straight from the posting.
+    steps:
+      - reveal: '[role=dialog] h2:text-is("Likely questions")'
+      - wait: 2.4
+
+  - say: Then talking points, tied to what you've actually done, so every answer has a real example.
+    steps:
+      - reveal: '[role=dialog] h2:text-is("Your talking points")'
+      - wait: 2.2
+
+  - say: And good questions to ask them. Save it as a PDF, and you're ready.
+    steps:
+      - reveal: '[role=dialog] h2:text-is("Questions to ask them")'
+      - wait: 1.2
+      - hover: '[role=dialog] button:has-text("Save as PDF")'
+      - wait: 0.5
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Interview prep from your own experience.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2

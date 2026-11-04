@@ -36,7 +36,10 @@ DemoReel (this folder) drives a real app with Playwright, records it, and narrat
 - With live data, don't quote numbers or company names that will change. Describe what the screen shows instead.
 - Avoid periods inside sentences. They split captions, so write "the Ollama website", not "ollama.com", and "federal jobs in the United States", not "U.S.".
 - Fix pronunciation with `pronounce:`, e.g. `{ USAJOBS: U.S.A. Jobs }`.
-- A Short needs a hook in the first line and must stay at 60 s or under. Zoom a lot, because desktop text is small on a phone.
+- A Short needs a hook in the first line and must stay at 60 s or under. Desktop text is small on a phone, so make it readable:
+  - Best: scale the whole page with script CSS (`main.content { zoom: 1.35; }`). The page re-flows to the narrow width, so nothing is cropped (`privacy-short.yaml`).
+  - Use the `zoom` step only on things narrower than the screen. Zooming a full-width section crops its lines.
+  - Hide the sidebar and wide table columns with script CSS. This styling is recording-only; say so when delivering.
 
 ## Data and safety rules
 - Film only throwaway data folders. The product's `env()` points the app at one, and the user's real profile is never used.

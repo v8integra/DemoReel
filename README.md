@@ -56,7 +56,9 @@ Steps (selectors are Playwright selectors):
 | `card: {...}` / `card: off` | shows or hides a title card mid-scene |
 | `wait: 1.5` | pauses |
 | `waitFor: <sel>` / `{ sel, timeout }` | waits until something appears (filmed) |
-| `skip: { until, timeout, label }` | cuts out a long wait, such as an AI run. Filming pauses until `until` appears, then a "⏩ 2 minutes later" badge shows. |
+| `skip: { until, timeout, label }` | cuts out a long wait, such as an AI run. Filming pauses until `until` appears (or `gone:` disappears), then a "⏩ 2 minutes later" badge shows. |
+| `reveal: <sel>` / `{ sel, block }` | smoothly scrolls an element to the top (or `block: center`), clear of the captions |
+| `paste: { into, text }` | puts long text in a field at once, like a paste |
 | `clickAll: { sel, gap }` | clicks each matching control in turn, e.g. every "Approve" |
 | `type: { into, text: [a, b, c] }` | a list types each entry and presses Enter (tag inputs). `enter: true` does the same for a single entry. |
 | `eval: <js>` | runs JavaScript in the page |
@@ -66,6 +68,7 @@ A scene lasts as long as its narration or its steps, whichever is longer. If the
 More script settings:
 - `start: fresh` films a brand-new install instead of the demo data.
 - `openFiles: [file]` makes the app's Open dialogs return these files, since native file pickers can't be filmed.
+- `acceptDialogs: true` answers the app's confirmation boxes with OK. They don't appear on video.
 - `chapter`, `introCard` are used by sequences.
 
 ## Tutorials (sequences)

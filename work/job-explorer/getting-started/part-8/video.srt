@@ -1,55 +1,55 @@
 1
-00:00:02,895 --> 00:00:04,270
+00:00:02,903 --> 00:00:04,277
 Here are your first results.
 
 2
-00:00:04,450 --> 00:00:09,860
+00:00:04,462 --> 00:00:09,865
 Each job gets a score from zero to a hundred, and the best fits are marked as strong matches.
 
 3
-00:00:10,735 --> 00:00:14,645
+00:00:10,726 --> 00:00:14,637
 Each one has a short reason, and a heads up when something needs a closer look.
 
 4
-00:00:15,511 --> 00:00:19,120
+00:00:15,496 --> 00:00:19,098
 Click details to see exactly why it fits, and where the gaps are.
 
 5
-00:00:22,752 --> 00:00:26,054
+00:00:22,648 --> 00:00:25,965
 Open posting takes you to the job on the employer's site.
 
 6
-00:00:26,242 --> 00:00:27,328
+00:00:26,145 --> 00:00:27,227
 That's where you apply.
 
 7
-00:00:28,195 --> 00:00:31,510
+00:00:28,085 --> 00:00:31,376
 Then come back and mark it applied, and it moves to your Tracker.
 
 8
-00:00:31,694 --> 00:00:33,835
+00:00:31,562 --> 00:00:33,707
 Or decline it, or save it for later.
 
 9
-00:00:34,705 --> 00:00:36,478
+00:00:34,570 --> 00:00:36,346
 Jobs with low scores are hidden.
 
 10
-00:00:36,666 --> 00:00:39,375
+00:00:36,525 --> 00:00:39,241
 Tick show low scores to see everything the search found.
 
 11
-00:00:42,003 --> 00:00:42,705
+00:00:41,965 --> 00:00:42,673
 That's it.
 
 12
-00:00:42,891 --> 00:00:45,459
+00:00:42,859 --> 00:00:45,420
 You've gone from setup to your first list of jobs.
 
 13
-00:00:45,645 --> 00:00:49,111
+00:00:45,602 --> 00:00:49,074
 Next, try Searcher Mode, to run your searches automatically.
 
 14
-00:00:49,300 --> 00:00:50,423
+00:00:49,256 --> 00:00:50,370
 Thanks for watching.

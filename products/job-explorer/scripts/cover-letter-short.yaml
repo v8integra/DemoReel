@@ -1,0 +1,78 @@
+# Cover letter YouTube Short: about 30 seconds, 9:16. Demo data; the letter is written live by the local AI.
+# Needs the Job Explorer build with the sentence-splitting fix (2026-11-03), or "Node.js" breaks the letter.
+title: Cover letter Short
+voice: af_heart
+speed: 1.05
+size: [720, 1280]
+scale: 1.5
+output: [1080, 1920]
+captions: true
+thumbnailAt: 1.2
+captionStyle: { bottom: 300, fontSize: 30, maxWidth: 86% }
+css: |
+  .shell { grid-template-columns: 1fr !important; }
+  nav.sidebar { display: none !important; }
+  .split { grid-template-columns: 1fr !important; }
+  .resume-list, .split > :first-child:not(.resume-detail) { display: none !important; }
+  /* The letter is the point of this Short: large enough to read on a phone, each paragraph shown whole. */
+  .editor-bullet textarea { font-size: 19px !important; line-height: 1.45 !important; field-sizing: content; }
+  #dr-card h1 { font-size: 72px; }
+  #dr-card p { font-size: 34px; }
+
+youtube:
+  title: Let AI write your cover letters, from your real experience #shorts
+  description: |
+    Job Explorer writes a cover letter for each job from your approved profile only. Every sentence is checked, and anything it can't back up is taken out.
+    Get Job Explorer on the Microsoft Store.
+  tags: [cover letter, AI cover letter, job search, resume, shorts]
+
+setup:
+  - nav: Review List
+  - wait: 0.5
+
+scenes:
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Cover letters, written for you.
+    say: Cover letters are the worst part of applying. So let AI write them, from your real experience.
+
+  - card: null
+    say: Pick a job, and tap write cover letter.
+    steps:
+      - wait: 0.3
+      - click: 'article.review-card:has-text("Brightwater") >> button:has-text("Write cover letter")'
+      - wait: 0.4
+
+  - say: It writes from your approved profile only. Every sentence is checked, and anything it can't back up is taken out.
+    steps:
+      - ring: '[role=dialog] p.small >> nth=0'
+      - wait: 1.2
+      - ring: off
+      - click: '[role=dialog] button.primary:has-text("Write cover letter")'
+      - skip: { until: '#cl-greet', timeout: 900 }
+
+  - say: Your draft is ready, written for this job, using your own experience.
+    steps:
+      - wait: 0.4
+      - scroll: { by: 300, over: '.resume-editor' }
+      - ring: '.editor-bullet textarea >> nth=0'
+      - wait: 1.6
+
+  - say: Edit anything you like. Then approve it, and export it as Word or PDF.
+    steps:
+      - ring: '.editor-bullet textarea >> nth=1'
+      - wait: 1
+      - ring: off
+      - scroll: -300
+      - hover: 'main button:has-text("Approve cover letter")'
+      - wait: 0.4
+      - hover: 'main button:has-text("Export PDF")'
+
+  - card:
+      image: ../assets/icon.png
+      title: Job Explorer
+      subtitle: Cover letters from your own experience.
+      cta: On the Microsoft Store
+    say: Job Explorer. Get it on the Microsoft Store.
+    hold: 1.2
